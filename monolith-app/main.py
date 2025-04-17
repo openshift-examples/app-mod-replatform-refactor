@@ -7,17 +7,17 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World from monolith-app"}
 
 
 @app.get("/service-a")
 async def service_a():
-    return {"message": "Hello from service a"}
+    return {"message": "Hello from service a (monolith-app)"}
 
 
 @app.get("/service-b")
 async def service_b():
-    return {"message": "Hello from service b"}
+    return {"message": "Hello from service b (monolith-app)"}
 
 
 @app.get("/health")
