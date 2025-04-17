@@ -20,6 +20,9 @@ spec:
       name: kiali
     grafana:
       enabled: false
+  gateways:
+    openshiftRoute:
+      enabled: true
 ---
 kind: ServiceMeshMemberRoll
 apiVersion: maistra.io/v1
