@@ -28,11 +28,11 @@ spec:
         - destination:
             host: monolith-app
             subset: version-v1
-          weight: 80
+          weight: 0
         - destination:
             host: monolith-app
             subset: version-v2
-          weight: 20
+          weight: 100
     - route:
         - destination:
             host: monolith-app
